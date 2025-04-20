@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Welcome</title>
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-image: url('BOTNAME.png'); /* Replace with your PNG image URL */
+      background-size: cover;
+      background-position: center;
+      color: white;
+      text-align: center;
+      animation: fadeInBackground 2s ease-out; /* Fade-in background */
+    }
+
+    @keyframes fadeInBackground {
+      from { opacity: 0; }
+      to { opacity: 1; }
+    }
+
+    .welcome-box {
+      padding: 40px;
+      background: rgba(0, 0, 0, 0.6); /* semi-transparent black background for readability */
+      border-radius: 15px;
+      box-shadow: 0 0 25px rgba(2, 2, 2, 0.7);
+      backdrop-filter: blur(8px); /* optional, adds a blur effect */
+      opacity: 0;
+      animation: fadeInBox 1.5s ease-out forwards; /* Fade-in box animation */
+    }
+
+    @keyframes fadeInBox {
+      from {
+        opacity: 0;
+        transform: translateY(50px);
+      }
+      to {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    h1 {
+      font-size: 2.5em;
+      margin-bottom: 10px;
+      opacity: 0;
+      animation: fadeInText 1s ease-out 0.5s forwards; /* Fade-in text */
+    }
+
+    @keyframes fadeInText {
+      from { opacity: 0; transform: translateY(-20px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    p {
+      font-size: 1.2em;
+      color: #e1e5eb;
+      margin-bottom: 30px;
+      opacity: 0;
+      animation: fadeInText 1s ease-out 1s forwards; /* Fade-in paragraph */
+    }
+
+    .btn {
+      padding: 12px 24px;
+      background-color: #fffb08;
+      color: rgb(3, 3, 3);
+      border: none;
+      border-radius: 5px;
+      font-size: 1em;
+      text-decoration: none;
+      transition: background 0.3s ease;
+      opacity: 0;
+      animation: fadeInButton 1s ease-out 1.5s forwards; /* Fade-in button */
+    }
+
+    @keyframes fadeInButton {
+      from { opacity: 0; transform: translateY(30px); }
+      to { opacity: 1; transform: translateY(0); }
+    }
+
+    .btn:hover {
+      background-color: #0aee30;
+    }
+  </style>
+</head>
+<body>
+  <div class="welcome-box">
+    <h1>WELCOME TO BB AUTO BOT WEB!</h1>
+    <p><strong>The ultimate scalping automation tool. Fast, accurate, and optimized for top performance.</strong></p>
+    <a href="third page3pics.html" class="btn">Continue</a>
+  </div>
+</body>
+</html>

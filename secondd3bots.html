@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>BB AUTO BOT - Product Page</title>
+  <style>
+    body {
+      margin: 0;
+      font-family: Arial, sans-serif;
+      background: #f0f0f0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height: 100vh;
+      animation: fadeInBody 7s ease-out;
+    }
+
+    @keyframes fadeInBody {
+      from { opacity: 0; transform: scale(0.95); }
+      to { opacity: 1; transform: scale(1); }
+    }
+
+    .back-button {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      background-color: #13cff0;
+      color: white;
+      padding: 10px 16px;
+      border-radius: 8px;
+      text-decoration: none;
+      font-weight: bold;
+      transition: background 0.3s ease;
+    }
+
+    .back-button:hover {
+      background-color: #0942dd;
+    }
+
+    .card {
+      background: #fff;
+      padding: 20px;
+      border-radius: 10px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      width: 280px;
+      margin: 20px;
+      transform: translateY(20px);
+      opacity: 0;
+      animation: fadeInCard 0.8s forwards;
+    }
+
+    @keyframes fadeInCard {
+      from { transform: translateY(20px); opacity: 0; }
+      to { transform: translateY(0); opacity: 1; }
+    }
+
+    .card img {
+      width: 100%;
+      height: auto;
+      border-radius: 10px;
+    }
+
+    .card h2 {
+      margin: 20px 0 10px;
+      color: #333;
+    }
+
+    .card p {
+      color: #555;
+      font-size: 1em;
+      margin-bottom: 20px;
+    }
+
+    .price {
+      font-size: 1.2em;
+      font-weight: bold;
+      color: #0ae8f8;
+      margin-bottom: 20px;
+    }
+
+    .btn {
+      padding: 8px 18px;
+      background-color: #13cff0;
+      color: white;
+      border: none;
+      border-radius: 5px;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.5s ease, transform 0.5s ease;
+    }
+
+    .btn:hover {
+      background-color: #0942dd;
+      transform: translateY(-3px);
+    }
+
+    .card:hover {
+      transform: translateY(-10px);
+    }
+  </style>
+</head>
+<body>
+  <a href="javascript:history.back()" class="back-button">← Back</a>
+
+  <!-- Product 1: BB AUTO BOT -->
+  <div class="card">
+    <img src="ROBOT.png" alt="BB AUTO BOT" />
+    <h2>BB AUTO BOT</h2>
+    <p>Automate your trading with cutting-edge technology.</p>
+    <div class="price">R4000 $212.99</div>
+    <a href="REQUEST.HTML" class="btn">Buy Now</a>
+  </div>
+
+  <!-- Product 2: BB AUTO BOT VIP GROUP -->
+  <div class="card">
+    <img src="ROBOT.png" alt="BB AUTO BOT VIP GROUP" />
+    <h2>BB AUTO BOT VIP GROUP</h2>
+    <p>Exclusive access to our private group for expert strategies.</p>
+    <div class="price">R500 $26.50</div>
+    <a href="forth page vip.html" class="btn">Buy Now</a>
+  </div>
+
+  <!-- Product 3: OWN YOUR ROBOT -->
+  <div class="card">
+    <img src="ROBOT.png" alt="OWN YOUR ROBOT" />
+    <h2>OWN YOUR ROBOT</h2>
+    <p>We create a custom PC bot that uses your strategy & bot name.</p>
+    <div class="price">R1599 $85</div>
+    <a href="create your bot .html" class="btn">Request Now</a>
+  </div>
+</body>
+</html>
